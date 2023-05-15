@@ -10,6 +10,7 @@ function App() {
           href='https://www.frontendmentor.io?ref=challenge'
           target='_blank'
           rel='noreferrer'>
+          {" "}
           Frontend Mentor
         </a>
         . Coded by{" "}

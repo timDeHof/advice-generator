@@ -5,7 +5,9 @@ import diceIcon from "../images/icon-dice.svg";
 import dividerDesktop from "../images/pattern-divider-desktop.svg";
 import dividerMobile from "../images/pattern-divider-mobile.svg";
 
-const AdviceWrapper = styled.div``;
+const AdviceWrapper = styled.div`
+  width: 100%;
+`;
 
 const AdviceContainer = styled.div`
   background-color: ${theme.colors["Dark-Grayish-Blue"]};
@@ -33,14 +35,12 @@ const AdviceText = styled.p`
 `;
 
 const Divider = styled.div`
-  background: url(${dividerMobile});
-  background-position: center;
+  background: center no-repeat url(${dividerDesktop});
   width: 100%;
   height: 1rem;
 
-  @media (min-width: ${theme.Breakpoint.Desktop}) {
-    background: url(${dividerDesktop});
-    background-position: center;
+  @media (max-width: ${theme.Breakpoint.Mobile}) {
+    background: center no-repeat url(${dividerMobile});
   }
 `;
 const AdviceButton = styled.button`

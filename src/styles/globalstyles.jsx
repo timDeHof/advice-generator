@@ -17,6 +17,7 @@ body {
   flex-direction:column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   height: calc(100vh - 0.1px);
   text-align: center;
 }
@@ -24,9 +25,10 @@ body {
 .attribution {
         font-size: 11px;
         text-align: center;
+        color: ${theme.colors["Light-Cyan"]};
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: ${theme.colors["Neon-Green"]};
       }
 
 `;
