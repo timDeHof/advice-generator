@@ -1,9 +1,9 @@
 import { createGlobalStyle } from "styled-components";
-import { normalize } from "styled-normalize";
+
 import { theme } from "../styles/theme";
 
 export const GlobalStyle = createGlobalStyle`
- ${normalize}
+
 
  * {
   box-sizing: border-box;
@@ -24,9 +24,10 @@ body {
 .attribution {
         font-size: 11px;
         text-align: center;
+        color: ${theme.colors["Light-Cyan"]};
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: ${theme.colors["Neon-Green"]};
       }
 
 `;

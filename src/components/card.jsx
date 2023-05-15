@@ -28,19 +28,18 @@ const AdviceId = styled.p`
 const AdviceText = styled.p`
   color: ${theme.colors["Light-Cyan"]};
   font-size: ${theme.typography.xxxl};
+  max-width: 27.75rem;
   line-height: 1.5;
   padding-bottom: 2rem;
 `;
 
 const Divider = styled.div`
-  background: url(${dividerMobile});
-  background-position: center;
+  background: center no-repeat url(${dividerDesktop});
   width: 100%;
   height: 1rem;
 
-  @media (min-width: ${theme.Breakpoint.Desktop}) {
-    background: url(${dividerDesktop});
-    background-position: center;
+  @media (max-width: ${theme.Breakpoint.Mobile}) {
+    background: center no-repeat url(${dividerMobile});
   }
 `;
 const AdviceButton = styled.button`
