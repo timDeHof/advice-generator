@@ -30,6 +30,7 @@ const AdviceId = styled.p`
 const AdviceText = styled.p`
   color: ${theme.colors["Light-Cyan"]};
   font-size: ${theme.typography.xxxl};
+  max-width: 27.75rem;
   line-height: 1.5;
   padding-bottom: 2rem;
 `;
