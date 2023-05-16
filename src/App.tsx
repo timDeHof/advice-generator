@@ -1,4 +1,5 @@
-import { Card } from "../src/components/card";
+import React from "react";
+import { Card } from "./components/card/card";
 
 function App() {
   return (

@@ -1,6 +1,6 @@
-interface AdviseType {
+interface AdviceType {
   id: number;
   advice: string;
 }
 
-export default AdviseType;
+export default AdviceType;
