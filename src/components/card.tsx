@@ -4,7 +4,7 @@ import { theme } from "../styles/theme";
 import diceIcon from "../images/icon-dice.svg";
 import dividerDesktop from "../images/pattern-divider-desktop.svg";
 import dividerMobile from "../images/pattern-divider-mobile.svg";
-
+import AdviseType from "../types/AdviseType";
 const AdviceWrapper = styled.div``;
 
 const AdviceContainer = styled.div`
@@ -71,7 +71,7 @@ export const Card = () => {
   useEffect(() => {
     handleClick();
   }, []);
-  const { id, advice } = adviceData;
+  const { id, advice }: AdviseType = adviceData;
   return (
     <AdviceWrapper>
       <AdviceContainer>
